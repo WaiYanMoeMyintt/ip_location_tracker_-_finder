@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+.ip-header{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   gap:3rem;
+}
+
+.ip-title h3 {
+  color:#cc0000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.ip-title p {
+   padding: .3rem 0;
+   font-size: .9rem;
+   color:#666666;
+}
+.ip-link li {
+     margin: 0 1rem;
+     display: flex;
+     gap:1rem;
+}
+.ip-link li a {
+  color:#cc0000;
+  font-weight: 400;
+  position: relative;
+}
+.ip-link li a:hover {
+  color:#960909;
+}
+.ip-link li a::before{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #cc0000;
+  display: block;
+  position: absolute;
+  bottom: -.4rem;
+}
+
+.ip-info {
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.ip-info h4 {
+  padding: .3rem 0;
+  font-size: 1.1rem;
+  color:#504f4f;
+  font-weight: 600;
+}
+
+.ip-info p, .ip-info p span {
+  line-height: 1.6rem;
+  font-size: .8rem;
+  color:#666666;
+}
+
+.tracker{
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-top: 2rem;
+}
+.tracker h4 {
+  color:#cc0000;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.tracker .tracker-info .tracking-info .tracking-details .info{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  background-color: #f7f7f7;
+  border-radius: .3rem;
+}
+
+form {
+  margin-top: 2rem;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+form button {
+  display: block;
+  background-color: #cc0000;
+  color: #fff;
+  padding: .6rem 0;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+form input {
+  outline: 1px solid #000;
+  border: 1px solid #0000;
+  border-radius: .4rem;
+  padding: .5rem 0;
+  display: inline-block;
+}
+
+form input::placeholder{
+  color: #000;
+  max-width: 30rem;
+}
